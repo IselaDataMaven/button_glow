@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+{
+}
+body{
+    margin:          0;
+    padding:         0;
+    display:         flex;
+    justify-content: center;
+    align-items:     center;
+    min-height:      200vh;
+    background:    #000e08;
+    font-family:     'Verdana'; 
+    
+}
+
+a{
+    position:        relative;
+    display:         inline-block;
+    padding:         25px 40px;
+    color:         rgb(192, 216, 255);
+    letter-spacing:  6px;
+    text-decoration: none;
+    overflow:        hidden;
+    transition:      1s;
+    border-radius:   8px;
+
+}
+
+a:hover{
+    color:          #166819;
+    background:     #10c719;
+    box-shadow:       0 0 10px #11ce2a, 
+                      0 0 40px #11ce2a, 
+                      0 0 80px #11ce2a;
+    transition-delay: 1s;
+}
+
+a div{
+    position: absolute;
+    display:  block;
+}
+
+a div:nth-child(1){
+    top:        0;
+    left:       -100%;
+    width:      100%;
+    height:     2px;
+    background: linear-gradient(180deg,transparent, #bbf321);
+}
+
+a:hover div:nth-child(1){
+    left:      100%;
+    transition:1s;
+}
+
+a div:nth-child(2){
+    top:         -100%;
+    right:       0;
+    width:       2px;
+    height:      100%;
+    background:  linear-gradient(270deg,transparent, #bbf321);
+}
+
+a:hover div:nth-child(2){
+    top:                100%;
+    transition:         1s;
+    transition-delay:   0.25s ;
+}
+
+a div:nth-child(3){
+    bottom:      0;
+    right:       -100%;
+    width:       100%;
+    height:      2px;
+    background:  linear-gradient(90deg,transparent, #bbf321);
+}
+
+a:hover div:nth-child(3){
+    right:             100%;
+    transition:        1s;
+    transition-delay:  0.5s ;
+}
+
+
+
+a div:nth-child(4){
+    bottom:       -100%;
+    left:         0;
+    width:        2px;
+    height:       100%;
+    background:   linear-gradient(360deg,transparent, #bbf321);
+}
+
+a:hover div:nth-child(4){
+    bottom:              100%;
+    transition:          1s;
+    transition-delay:    1s;
+}
